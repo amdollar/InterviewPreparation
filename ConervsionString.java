@@ -6,6 +6,8 @@ public class ConervsionString {
 		String str = new String("SprInG");// sPRiNg
 		String converted = convert(str);
 		System.out.println(converted.toString());
+		String convertedCase = changeCase(str);
+		System.out.println(convertedCase);
 
 	}
 
@@ -22,6 +24,25 @@ public class ConervsionString {
 			sb.append(s);
 		}
 		return sb.toString();
+	}
+
+	// Better approach for generic problems
+
+	private static String changeCase(String str) {
+		StringBuilder sb = new StringBuilder();
+		for (char ch : str.toCharArray()) {
+			String k = new String();
+			if (ch >= 65 && ch <= 90) {
+				char newch = (char) (ch + 32);
+				k = String.valueOf(newch);
+			} else {
+				char newch = (char) (ch - 32);
+				k = String.valueOf(newch);
+			}
+			sb.append(k);
+		}
+		return sb.toString();
+
 	}
 
 }
