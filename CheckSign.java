@@ -17,9 +17,9 @@ public class CheckSign {
 	}
 
 	private static boolean sameOrNot(int number1, int number2) {
-		int leastBit = (number1 ^ number2) >> 31;
+		int leastBit = (number1 ^ number2) >> 31; // left shifting the OR of these to numbers to 31 times to get MST bit 1|0 = 1 or 0|1 = 1
 		System.out.println(leastBit);
-		if (leastBit < 1)
+		if (leastBit < 1) // if MSB is 1 or greater than 0 then numbers are having diff signs.
 			return false;
 		else
 			return true;
