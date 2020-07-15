@@ -1,5 +1,9 @@
 package io.test.InterviewPreparation;
-
+/**
+*Write a program to check whether  the given string can be
+* rearranged to Palindrome string or not.
+*
+*/
 public class RearrangeToPalindrome {
 
 	public static void main(String[] args) {
