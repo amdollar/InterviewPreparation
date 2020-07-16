@@ -29,6 +29,7 @@ public class TwoSums {
 			data.put(nums[i], i);
 
 		}
+		
 		throw new IllegalArgumentException("Not found");
 
 	}
