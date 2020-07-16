@@ -1,6 +1,12 @@
 package io.test.InterviewPreparation;
 
 import java.util.Scanner;
+/**
+*Write a program to find whether the given number is 
+*a palindrome or not
+*
+*/
+
 
 public class IntegerPalindrome {
 
