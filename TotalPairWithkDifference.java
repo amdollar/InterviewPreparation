@@ -1,5 +1,6 @@
 package io.test.ProblemSolving;
 
+
 import java.util.Arrays;
 
 public class TotalPairWithkDifference {
